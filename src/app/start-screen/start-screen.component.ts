@@ -4,9 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-startscreen',
   standalone: true,
   imports: [],
-  templateUrl: './startscreen.component.html',
-  styleUrl: './startscreen.component.scss'
+  templateUrl: './start-screen.component.html',
+  styleUrl: './start-screen.component.scss'
 })
-export class StartscreenComponent {
+export class StartScreenComponent {
 
 }

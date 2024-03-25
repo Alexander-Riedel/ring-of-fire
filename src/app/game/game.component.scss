@@ -19,6 +19,11 @@
     }
 }
 
+.played-card {
+    right: 20px;
+    transform: scale(1.25) translateX(200px) translateY(-200px) rotate(-10deg);
+}
+
 .top-card {
     cursor: pointer;
     transition: all 200ms ease-in-out;

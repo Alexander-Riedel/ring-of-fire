@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Game } from '../../models/game';
 import { PlayerComponent } from "../player/player.component";
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @Component({
@@ -9,7 +12,7 @@ import { PlayerComponent } from "../player/player.component";
     standalone: true,
     templateUrl: './game.component.html',
     styleUrl: './game.component.scss',
-    imports: [CommonModule, PlayerComponent]
+    imports: [CommonModule, PlayerComponent, MatButtonModule, MatIconModule, MatDividerModule]
 })
 
 export class GameComponent implements OnInit {

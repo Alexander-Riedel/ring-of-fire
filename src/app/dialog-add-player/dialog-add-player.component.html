@@ -8,5 +8,5 @@
 </mat-dialog-content>
 <mat-dialog-actions>
     <button mat-button (click)="onNoClick()">Abbrechen</button>
-    <button mat-button [mat-dialog-close]="name" cdkFocusInitial>OK</button>
+    <button mat-button [disabled]="name.length == 0" [mat-dialog-close]="name" cdkFocusInitial>OK</button>
 </mat-dialog-actions>

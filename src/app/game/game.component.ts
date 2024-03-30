@@ -40,6 +40,8 @@ export class GameComponent implements OnInit {
       //console.log(this.game);
       this.pickCardAnimation = true;
 
+      this.game.currentPlayer++;
+      this.game.currentPlayer = this.game.currentPlayer % this.game.players.length;
       setTimeout(() => {
         this.game.playedCards.push(this.currentCard!);
         //console.log(this.currentCard);
@@ -52,8 +54,10 @@ export class GameComponent implements OnInit {
     const dialogRef = this.dialog.open(DialogAddPlayerComponent);
 
     dialogRef.afterClosed().subscribe((name: string) => {
-      this.game.players.push(name);
-      console.log('Der Spieler', name, 'wurde hinzugefügt.');
+      if (name && name.length > 0) {
+        this.game.players.push(name);
+        console.log('Der Spieler', name, 'wurde hinzugefügt.');
+      }
     });
   }
 

@@ -1,0 +1,36 @@
+.start-screen {
+    background-color: #404040;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 100vh;
+    }
+}
+
+.start-button-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25%;
+    display: flex;
+    justify-content: center;
+
+    button {
+        width: 150px;
+        height: 75px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #404040;
+
+        &:hover {
+            color: black;
+            cursor: pointer;
+        }
+    }
+
+}

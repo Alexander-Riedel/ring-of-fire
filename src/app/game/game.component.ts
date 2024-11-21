@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit, OnDestroy, inject } from '@angular/core';
 import { Game } from '../../models/game';
 import { PlayerComponent } from "../player/player.component";
+import { PlayerMobileComponent } from '../player-mobile/player-mobile.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
@@ -16,6 +17,7 @@ import { ActivatedRoute } from '@angular/router';
   imports: [
     CommonModule,
     PlayerComponent,
+    PlayerMobileComponent,
     MatButtonModule,
     MatIconModule,
     MatDialogModule,
@@ -24,6 +26,7 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './game.component.html',
   styleUrls: ['./game.component.scss']
 })
+
 export class GameComponent implements OnInit, OnDestroy {
   game: Game = new Game();
   gameId: string = '';
@@ -129,5 +132,5 @@ export class GameComponent implements OnInit, OnDestroy {
     } catch (err) {
       console.log(err);
     }
-}
+  }
 }

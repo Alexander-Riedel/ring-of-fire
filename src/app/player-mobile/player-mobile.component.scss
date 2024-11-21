@@ -1,5 +1,6 @@
 .player {
-    width: 250px;
+    width: 100px;
+    height: 25;
     display: flex;
     align-items: center;
     box-shadow: inset 0px 1px 0px 0px #555555;
@@ -15,37 +16,19 @@
     text-shadow: 0px 1px 0px #854629;
 
     span {
-        font-size: 18px;
+        font-size: 14px;
         margin-left: 12px;
     }
-
-    img {
-        width: 45px;
-        height: 45px;
-        object-fit: cover;
-        border-radius: 100%;
-    }
-
 }
 
 .player-active {
-    width: 300px;
+    width: 120px;
     box-shadow: inset 0px 1px 0px 0px #cf866c;
     background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
     background-color: #d0451b;
     border: 1px solid #942911;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Arial;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #854629;
 
     span {
-        font-size: 30px;
-    }
-
-    img {
-        width: 50px;
-        height: 50px;
+        font-size: 18px;
     }
 }
